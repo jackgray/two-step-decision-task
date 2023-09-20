@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>NARC Lab Tasks | jsPsych tasks made by the Niv Lab (and modified for mobile devices by @jackgray from the NARC Lab)</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="NARC Lab Tasks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="jsPsych tasks made by the Niv Lab (and modified for mobile devices by @jackgray from the NARC Lab)" />
+<meta property="og:description" content="jsPsych tasks made by the Niv Lab (and modified for mobile devices by @jackgray from the NARC Lab)" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="NARC Lab Tasks" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="NARC Lab Tasks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"jsPsych tasks made by the Niv Lab (and modified for mobile devices by @jackgray from the NARC Lab)","headline":"NARC Lab Tasks","name":"NARC Lab Tasks","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"}},"url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GG0RKT54J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GG0RKT54J');
+</script>
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">NARC Lab Tasks</a></h1>
+
+        
+          <img src="/assets/img/logo.png" alt="Logo" / style="max-width: 200px">
+        
+
+        <p>jsPsych tasks made by the Niv Lab (and modified for mobile devices by @jackgray from the NARC Lab)</p>
+
+        <h3 style="margin-right: 145px;">Resources</h3>
+
+        <p style="margin-right: 145px; margin-bottom: 2px;"><a href="https://www.jspsych.org/">jsPsych</a></p>
+        <p style="margin-right: 145px; margin-bottom: 2px;"><a href="https://nivlab.github.io/nivturk/">NivTurk</a></p>
+        <p style="margin-right: 140px; margin-bottom: 2px;"><a href="/tutorials.html">Tutorials</a></p>
+        <p style="margin-right: 151px; margin-bottom: 2px;"><a href="/stimuli.html">Stimuli</a></p>
+        <p style="margin-right: 127px; margin-bottom: 2px;"><a href="/extensions.html">Extensions</a></p>
+
+      </header>
+      <section>
+
+      <h1 class="no_toc" id="tasks--plugins">Tasks / Plugins</h1>
+
+<p>TABLE OF CONTENTS</p>
+
+<ul id="markdown-toc">
+  <li><a href="#reinforcement-learning-tasks" id="markdown-toc-reinforcement-learning-tasks">Reinforcement Learning Tasks</a>    <ul>
+      <li><a href="#simple-2-arm-bandit" id="markdown-toc-simple-2-arm-bandit">Simple 2-arm bandit</a></li>
+      <li><a href="#3-arm-reversal-learning-task" id="markdown-toc-3-arm-reversal-learning-task">3-arm reversal learning task</a></li>
+      <li><a href="#risk-sensitive-learning-task-v1" id="markdown-toc-risk-sensitive-learning-task-v1">Risk sensitive learning task (v1)</a></li>
+      <li><a href="#risk-sensitive-learning-task-v2" id="markdown-toc-risk-sensitive-learning-task-v2">Risk sensitive learning task (v2)</a></li>
+      <li><a href="#modified-risk-sensitivity-task" id="markdown-toc-modified-risk-sensitivity-task">Modified risk sensitivity task</a></li>
+      <li><a href="#risky-investment-task" id="markdown-toc-risky-investment-task">Risky investment task</a></li>
+      <li><a href="#pavlovian-gono-go-task" id="markdown-toc-pavlovian-gono-go-task">Pavlovian go/no-go task</a></li>
+      <li><a href="#relative-value-learning-task" id="markdown-toc-relative-value-learning-task">Relative value learning task</a></li>
+      <li><a href="#horizons-task" id="markdown-toc-horizons-task">Horizons task</a></li>
+      <li><a href="#two-step-task" id="markdown-toc-two-step-task">Two-step task</a></li>
+    </ul>
+  </li>
+  <li><a href="#decision-making-tasks" id="markdown-toc-decision-making-tasks">Decision-making Tasks</a>    <ul>
+      <li><a href="#prospect-theory-gambles" id="markdown-toc-prospect-theory-gambles">Prospect theory gambles</a></li>
+    </ul>
+  </li>
+  <li><a href="#executive-functioning-tasks" id="markdown-toc-executive-functioning-tasks">Executive Functioning Tasks</a>    <ul>
+      <li><a href="#ravens-progressive-matrices" id="markdown-toc-ravens-progressive-matrices">Raven’s progressive matrices</a></li>
+      <li><a href="#matrix-reasoning-task-mars-ib" id="markdown-toc-matrix-reasoning-task-mars-ib">Matrix reasoning task (MaRs-IB)</a></li>
+      <li><a href="#spatial-recall" id="markdown-toc-spatial-recall">Spatial recall</a></li>
+      <li><a href="#symmetry-span" id="markdown-toc-symmetry-span">Symmetry span</a></li>
+      <li><a href="#digit-symbol-matching" id="markdown-toc-digit-symbol-matching">Digit symbol matching</a></li>
+      <li><a href="#vocabulary-test" id="markdown-toc-vocabulary-test">Vocabulary test</a></li>
+    </ul>
+  </li>
+  <li><a href="#self-report-plugins" id="markdown-toc-self-report-plugins">Self-Report Plugins</a>    <ul>
+      <li><a href="#self-report-likert-scale" id="markdown-toc-self-report-likert-scale">Self-report (Likert) scale</a></li>
+      <li><a href="#demographics-form" id="markdown-toc-demographics-form">Demographics form</a></li>
+      <li><a href="#feedback-form" id="markdown-toc-feedback-form">Feedback form</a></li>
+      <li><a href="#mental-health-resources" id="markdown-toc-mental-health-resources">Mental health resources</a></li>
+    </ul>
+  </li>
+  <li><a href="#utilities" id="markdown-toc-utilities">Utilities</a>    <ul>
+      <li><a href="#consent-forms" id="markdown-toc-consent-forms">Consent forms</a></li>
+      <li><a href="#audio-test" id="markdown-toc-audio-test">Audio test</a></li>
+      <li><a href="#screen-check" id="markdown-toc-screen-check">Screen check</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="reinforcement-learning-tasks">Reinforcement Learning Tasks</h2>
+
+<h3 id="simple-2-arm-bandit">Simple 2-arm bandit</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/bandit"><b>[Code]</b></a> <a href="./tasks/bandit/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A simple 2-arm bandit task using Javascript and Canvas graphics.</p>
+</blockquote>
+
+<h3 id="3-arm-reversal-learning-task">3-arm reversal learning task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/3arm"><b>[Code]</b></a> <a href="./tasks/3arm/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A gamified, fishing-themed 3-arm reversal learning task implemented using Javascript and CSS.</p>
+</blockquote>
+
+<h3 id="risk-sensitive-learning-task-v1">Risk sensitive learning task (v1)</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/rsl-v1"><b>[Code]</b></a> <a href="./tasks/rsl-v1/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>An apple harvest-themed implementation of the risk sensitive learning task (<a href="https://doi.org/10.1523/JNEUROSCI.5498-10.2012">Niv et al. 2012</a>) using Javascript and Canvas graphics.</p>
+</blockquote>
+
+<h3 id="risk-sensitive-learning-task-v2">Risk sensitive learning task (v2)</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/rsl-v2"><b>[Code]</b></a> <a href="./tasks/rsl-v2/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A child-friendly, fishing-themed implementation of the risk sensitive learning task (<a href="https://doi.org/10.1523/JNEUROSCI.5498-10.2012">Niv et al. 2012</a>) using Javascript and CSS.</p>
+</blockquote>
+
+<h3 id="modified-risk-sensitivity-task">Modified risk sensitivity task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/mrst"><b>[Code]</b></a> <a href="./tasks/mrst/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A modified version of the risk sensitive learning task (<a href="https://doi.org/10.1523/JNEUROSCI.5498-10.2012">Niv et al. 2012</a>).</p>
+</blockquote>
+
+<h3 id="risky-investment-task">Risky investment task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/investment"><b>[Code]</b></a> <a href="./tasks/investment/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A stock market-themed risky investment task implemented using Javascript and CSS. Similar in framing to <a href="https://doi.org/10.1111/tops.12143">Zhang et al. (2015)</a>. Designed to study risk sensitive reinforcement learning behaviors.</p>
+</blockquote>
+
+<h3 id="pavlovian-gono-go-task">Pavlovian go/no-go task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/pgng"><b>[Code]</b></a> <a href="./tasks/pgng/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A robot-themed version of the Pavlovian go/no-go task implemented using Javascript and CSS.</p>
+</blockquote>
+
+<h3 id="relative-value-learning-task">Relative value learning task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/rvl"><b>[Code]</b></a> <a href="./tasks/rvl/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A science fiction-themed implementation of the relative value learning task (<a href="https://doi.org/10.1038/ncomms9096">Palminteri et al. 2015</a>). Runs two blocks of only counterfactual learning but can be easily adapted to include factual learning.</p>
+</blockquote>
+
+<h3 id="horizons-task">Horizons task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/horizons"><b>[Code]</b></a> <a href="./tasks/horizons/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>An implementation of the horizons task (<a href="https://doi.org/10.1037/a0038199">Wilson et al. 2014</a>) using Javascript and CSS.</p>
+</blockquote>
+
+<h3 id="two-step-task">Two-step task</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/two-step"><b>[Code]</b></a> <a href="./tasks/two-step/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A space-themed version of the two-step task. Inspired by <a href="https://doi.org/10.1177%2F0956797616639301">Decker et al. (2016)</a>; adapted from <a href="https://doi.org/10.1525/collabra.17213">Nussenbaum et al. (2020)</a>.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="decision-making-tasks">Decision-making Tasks</h2>
+
+<h3 id="prospect-theory-gambles">Prospect theory gambles</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/prospect"><b>[Code]</b></a> <a href="./tasks/prospect/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A jsPsych implementation of prospect theory gambles using icon arrays (<a href="http://arxiv.org/abs/1910.09725">Banchilon et al. 2019</a>).</p>
+</blockquote>
+
+<hr />
+
+<h2 id="executive-functioning-tasks">Executive Functioning Tasks</h2>
+
+<h3 id="ravens-progressive-matrices">Raven’s progressive matrices</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/rpm"><b>[Code]</b></a> <a href="./tasks/rpm/experiment.html?tf=a"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>The abbreviated 9-item Raven’s standard progressive matrices. Both Forms A and B of <a href="https://doi.org/10.1177%2F1073191112446655">Bilker et al. (2012)</a> are available.</p>
+</blockquote>
+
+<h3 id="matrix-reasoning-task-mars-ib">Matrix reasoning task (MaRs-IB)</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/mars"><b>[Code]</b></a> <a href="./tasks/mars/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A web-friendly implementation of the matrix reasoning item bank (<a href="https://doi.org/10.1098/rsos.190232">Chierchia et al. 2019</a>). All materials were retrieved from the project’s <a href="https://osf.io/g96f4/">OSF repository</a> and the task design was modeled after the <a href="https://app.gorilla.sc/openmaterials/36164">Gorilla version</a>.</p>
+</blockquote>
+
+<h3 id="spatial-recall">Spatial recall</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/spatial-recall"><b>[Code]</b></a> <a href="./tasks/spatial-recall/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A simple plugin for a forwards/backwards spatial recall task. Includes three scoring rules (absolute, partial credit, longest sequence).</p>
+</blockquote>
+
+<h3 id="symmetry-span">Symmetry span</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/symmetry-span"><b>[Code]</b></a> <a href="./tasks/symmetry-span/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A jsPsych implementation of the symmetry span test (<a href="https://doi.org/10.3758/BF03192720">Unsworth et al. 2005</a>), adapted from <a href="https://github.com/mahiluthra/working_memory_tests">Mahi Luthra</a>.</p>
+</blockquote>
+
+<h3 id="digit-symbol-matching">Digit symbol matching</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/dsst"><b>[Code]</b></a> <a href="./tasks/dsst/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A jsPsych implementation of the <a href="https://www.testmybrain.org/tests/DigSymbCoding/DSC.html">digit symbol matching test</a>.</p>
+</blockquote>
+
+<h3 id="vocabulary-test">Vocabulary test</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/vocabulary"><b>[Code]</b></a> <a href="./tasks/vocabulary/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A jsPsych implementation of the 20-item <a href="https://www.testmybrain.org/tests/wordsum/index_v3e.html">test my brain</a> vocabulary test.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="self-report-plugins">Self-Report Plugins</h2>
+
+<h3 id="self-report-likert-scale">Self-report (Likert) scale</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/self-report"><b>[Code]</b></a> <a href="./tasks/self-report/experiment.html?plugin=survey"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>The survey-template plugin is an extension of the jsPsych <a href="https://www.jspsych.org/plugins/jspsych-survey-likert/">survey-likert</a> plugin. It displays a set of questions with Likert scale responses. For a full description of the plugin, please see the <a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/self-report#jspsych-survey-template">docs page</a>.</p>
+
+  <p>For a list of questionnaires already formatted for use with the survey-template plugin, please see <a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/self-report">docs page</a>.</p>
+</blockquote>
+
+<h3 id="demographics-form">Demographics form</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/self-report"><b>[Code]</b></a> <a href="./tasks/self-report/experiment.html?plugin=demo"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A demographics form that includes the demographic items required by the NIMH (e.g. age, gender, ethnicity, race) plus education.</p>
+</blockquote>
+
+<h3 id="feedback-form">Feedback form</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/self-report"><b>[Code]</b></a> <a href="./tasks/self-report/experiment.html?plugin=feedback"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>A feedback form that asks for a participant’s appraisal of an experiment (e.g. difficulty, enjoyability), their task strategy, and general feedback.</p>
+</blockquote>
+
+<h3 id="mental-health-resources">Mental health resources</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/self-report"><b>[Code]</b></a> <a href="./tasks/self-report/experiment.html?plugin=mhr"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>Displays a page with free-to-access mental health resources for participants. Must be included in any  online Niv/Daw lab experiment involving self-report symptom measures.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="utilities">Utilities</h2>
+
+<h3 id="consent-forms">Consent forms</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/consent/"><b>[Niv Lab]</b></a> <a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/consent/"><b>[Daw Lab]</b></a></p>
+
+<blockquote>
+  <p>The consent forms for online experiments in the Niv &amp; Daw labs.</p>
+</blockquote>
+
+<h3 id="audio-test">Audio test</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/audio-test"><b>[Code]</b></a> <a href="./tasks/audio-test/experiment.html"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>Plugin for playing an audio file, getting a text response, and verifying that it is correct made by playing with jspsych template plugins.</p>
+</blockquote>
+
+<h3 id="screen-check">Screen check</h3>
+
+<p><a href="https://github.com/nivlab/jspsych-demos/tree/main/tasks/screen-check"><b>[Code]</b></a> <a href="./tasks/screen-check/experiment.html?min_width=12000&amp;min_height=8000"><b>[Demo]</b></a></p>
+
+<blockquote>
+  <p>Plugin to verify that a participant’s browser window meets a minimal screen resolution.</p>
+</blockquote>
+
+
+      </section>
+      <footer>
+        <p><small>View on <a href="">GitHub</a> | Theme by <a href="https://github.com/orderedlist">orderedlist</a><br>Funding from <a href="https://ncats.nih.gov">NCATS</a> (UL1TR003017)</small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GG0RKT54J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8GG0RKT54J');
+    </script>
+  </body>
+</html>
