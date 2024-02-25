@@ -66,4 +66,4 @@ properties:
       azureFile:
         sharename: narclabaudiofileshare
         storageAccountName: narclabaudiostorage
-        storageAccountKey: j8R0+EEtm64hnreKaM4XSMZYIrT8Q5X2IgH/Wu6PbMsp7hFmKepyiQgB4ZNoow5cev9mUI7sZgS7+ASt7P4XIg==
+        storageAccountKey: replace_with_storageaccountkey
